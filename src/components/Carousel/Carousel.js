@@ -12,7 +12,7 @@ const Carousel = ({ slide_count=2, infinte=true }) => {
   const [prevDisabled, setPrevDisabled] = useState(false)
 
   useEffect(()=> {
-    axios.get(`http://localhost:3600/api/carousel?count=${slide_count}`)
+    axios.get(`http://localhost:3600/api/carousel?slides=${slide_count}`)
     .then((response) => response.json())
     .then((data) => {
        console.log(data.data);
