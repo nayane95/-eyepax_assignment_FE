@@ -1,0 +1,17 @@
+.slide-image{
+    margin-top: 5rem;
+    width:80%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.slide-wrapper{ 
+    animation: fadeIn 1.5s; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
